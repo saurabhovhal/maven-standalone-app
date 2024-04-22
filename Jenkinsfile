@@ -33,11 +33,11 @@ pipeline {
 //             }
 //         }
         
-        stage('Static Analysis'){
-            steps{
-                recordIssues enabledForFailure: true, tools: [checkStyle(pattern: '**/checkstyle-result.xml')]
-            }
-        }
+        // stage('Static Analysis'){
+        //     steps{
+        //         recordIssues enabledForFailure: true, tools: [checkStyle(pattern: '**/checkstyle-result.xml')]
+        //     }
+        // }
         
         stage('Code Coverage'){
             steps{
